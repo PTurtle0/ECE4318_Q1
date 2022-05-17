@@ -10,7 +10,7 @@ z = np.arange(0, 4.99, 0.01, dtype=float)
 phi = []
 
 for i in z:
-    x = z[i]
+    x = z
     output = integrate.trapezoid(cdf, np.NINF, x)
     phi[i] = output
 
